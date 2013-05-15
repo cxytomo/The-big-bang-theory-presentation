@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+			section {
+				height: 800px;
+			}
+			.guess h1 {
+				margin-top: 250px;
+			}
+			.topic {
+				background: url('images/topic_bg.jpg') no-repeat 50% 0;
+				
+			}
+			.reveal .presenter {
+				margin-top: 170px;
+				margin-bottom: 0px;
+			}
+			.clue {
+				position: relative;
+			}
+			.clue h2 {
+				margin-top: 50px;
+			}
+			.clue ul {
+				position: absolute;
+				left: 321px;
+			}
+			.reveal a img,.reveal section img {
+				border: none;
+				margin: 5px 0;
+				box-shadow: none;
+			}
+			.reveal a:hover img {
+				border: none;
+			}
+			.reveal .intro img {
+				float: left;
+			}
+			.fashionin body .reveal {
+				background: #66cac9 url('images/fashion.gif') no-repeat 50% 0;
+			}
+			.unveil body .reveal {
+				background: #a5c26e url('images/yourself.gif') no-repeat 50% -10%;
+			}
+			.sheldonT body .reveal {
+				background: url('images/sheldonTshirt.jpg') no-repeat 50% 70%;
+			}
+			.leonardJ body .reveal {
+				color: white;
+				background: white url('images/leonardJ.jpg') no-repeat 50% 70%;
+			}
+			.howardTt body .reveal {
+				color: white;
+				background: white url('images/howardTt.jpg') no-repeat 50% 70%;
+			}
+			.rajSj body .reveal {
+				color: white;
+				background: white url('images/rajSj.jpg') no-repeat 50% 70%;
+			}
+			.costume1 body .reveal {
+				background: url('images/costume1.jpg') no-repeat 50% 5%,url('images/costume2.jpg') no-repeat 50% 50%, url('images/costume3.jpg') no-repeat 50% 90%;;
+			}
+			.setdec body .reveal {
+				background: white url('images/set1.jpg') no-repeat 50% 50%;
+				color: black;
+			}
+			.setdec body .reveal h2 {
+				color: black;
+			}
+			.comic body .reveal {
+				background: url('images/comic_store.jpg') no-repeat 50% 50%;
+			}
+			.lab body .reveal {
+				background: url('images/lab.jpg') no-repeat 50% 50%;
+			}
+			.apartment body .reveal {
+				background: url('images/SheldonsA.jpg') no-repeat 50% 50%;
+			}
+			.emotionRm body .reveal {
+				background: white url('images/romance.jpg') no-repeat 60% 80%;
+			}
+			.friend body .reveal {
+				background: url('images/scene1.png') no-repeat 50% 50%;
+			}
+			.scene2 body .reveal {
+				background: url('images/scene2.png') no-repeat 50% 50%;
+			}
+			.scene3 body .reveal {
+				background: url('images/scene3.png') no-repeat 50% 50%;
+			}
+			.reveal .romance h2{
+				margin-top: -10px;
+				color: black;
+			}
+			.intro .discrptn {
+				float: right;
+				font-size: 18px;
+				width: 500px;
+				text-align: left;
+			}
+			.intro .name {
+				font-size: 30px;
+				margin-bottom: 20px;
+			}
+			.reveal .intro img {
+				-webkit-transform: scale(1.5);
+				transform: scale(1.5);
+				border: none;
+				margin-top: 60px;
+			}
+			.reveal .conclusion {
+				margin-top: 540px;
+				color: black;
+			}
+			.reveal .vague {
+				display: inline-block;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 0 10px;
+				background-color: rgba(0,0,0,0.5);
+				color: white;
+				width: auto;
+				height: 100px;
+				line-height: 100px;
+			}
+			.writingScript body .reveal {
+				background-color: white;
+			}
+			.writings h2 {
+				color: black;
+			}
+			.reveal .intro ul {
+				font-size: 18px;
+			}
+			.reveal .forAudience li {
+				margin-bottom: 20px;
+				text-align: justify;
+			}
+			.acknowledge h1 {
+				margin-top: 20%;
+			}
+			.reveal .authorize {
+				margin-top: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section class="guess">
+					<h1>Guess First</h1>
+				</section>
+				<section class="topic">
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+				<section>
+					<h1>What makes the big bang theory a popular show</h1>
+					<p class="presenter">
+						<small>Presented by <a href="http://tomo.im">程鑫滟(Tomo)</a> / <a href="http://twitter.com/cxytomo">@cxytomo</a></small>
+					</p>
+				</section>
+				<!-- keys to make the bigbang theory a popular show-->
+				<section class="clue">
+						<h2>conventions of sitcom</h2>
+						<ul>
+							<li class="fragment"><code>characters</code></li>
+							<li class="fragment"><code>writing/script</code></li>
+							<li class="fragment"><code>costume</code></li>
+							<li class="fragment"><code>set(apartment,school,bar)</code></li>
+							<li class="fragment"><code>emotion(romance,friendship,family)</code></li>
+						</ul>
+					</section>
+				<!-- Example of nested vertical slides -->
+				<section class="actors">
+					<section data-state="unveil">
+						<h2>CHARACTERS</h2>
+					</section>
+					<section class="intro">
+						<p class="discrptn name">Leonard Hofstadter</p>
+						<img src="images/lenoard.jpg">
+						<p class="discrptn">experimental physicist</p>
+						<p class="discrptn">works in Caltech</p>
+						<p class="discrptn">
+						Although Leonard feels at home with his geek colleagues, he wants to be more social. Among the main characters, he generally has the least amount of difficulty interacting with ”non-geek” individuals.
+						</p>
+					</section>
+					<section class="intro">
+						<p class="discrptn name">Sheldon Cooper</p>
+						<img width="333" height="500" src="images/sheldon.jpg">
+						<p class="discrptn">theoretical physicist</p>
+						<p class="discrptn">Works in Caltech</p>	
+						<p class="discrptn">Sheldon is logical and has an overly extensive general knowledge. He possesses an eidetic memory and an IQ of 187</p>
+					</section>
+					<section class="intro">
+						<p class="discrptn name">Penny</p>
+						<img width="333" height="500" src="images/Penny.jpg">
+						<p class="discrptn">waitress</p>
+						<p class="discrptn">Works in local Cheesecake Factory</p>
+						<p class="discrptn">Penny has an aspirations of becoming an actress. She is not particularly intellectually gifted or savvy in a specific technical field, but she has great social skills and is very knowledgeable about pop culture.</p>
+					</section>
+					<section class="intro">
+						<p class="discrptn name">Howard Wolowitz</p>
+						<img width="333" height="500" src="images/Howard.jpg">
+						<p class="discrptn">an aerospace engineer</p>
+						<p class="discrptn">Works in Caltech’s Department of Applied Physics</p>
+						<p class="discrptn">He has shown limited success with other women. Eventually, he found his girlfriend, Bernadette , An amateur microbiologist.</p>
+					</section>
+					<section class="intro">
+						<p class="discrptn name">Rajesh Koothrappali</p>
+						<img width="333" height="500" src="images/rajesh.jpg">
+						<p class="discrptn">astrophysicist</p>
+						<p class="discrptn">Works in Caltech</p>
+						<p class="discrptn">He is very shy around women and is physically unable to talk to them unless he drinks alcohol. However, he has had much better luck with women as opposed to his overly confident best friend Howard.</p>
+					</section>
+				</section>
+				<section class="writings">
+					<section data-state="writingScript">
+						<h2>Writing</h2>
+						<img width="400" height="360" src="images/writing.png" alt="writings" style="border:none;-webkit-transform: scale(1.5);-moz-transform:scale(1.5);margin-top:50px">
+					</section>
+					<section class="intro">
+						<p class="discrptn name">an experienced writer</p>
+						<img width="333" height="400" src="images/ChuckLorre.jpg">
+						<p class="discrptn">Chuck Lorre</p> 
+						<p class="discrptn">works:</p> 
+						<ul class="discrptn">
+							<li>Grace Under Fire</li>
+							<li>Cybill </li>
+							<li>Dharma & Greg</li>
+							<li>Two and a Half Men《好汉两条半》</li>
+							<li>The Big Bang Theory</li>
+						</ul>
+					</section>
+					<section class="intro">
+						<p class="discrptn name">techonical director</p>
+						<img width="333" height="400" src="images/davidsaltzberg.jpg">
+						<p class="discrptn"><strong>David Saltzberg</strong></p> 
+						<p class="discrptn">a Professor of Physics and Astronomy at the University of California, Los Angeles.</p>
+					</section>
+					<section style="background-image: url('images/scenes.png');background-repeat: no-repeat">
+						<p>live audience</p>
+					</section>
+				</section>
+				<section class="costume">
+					<section data-state="fashionin">
+						<h2>Costume</h2>
+					</section>
+					<section data-state="sheldonT">
+						<p>
+							sheldon's costume
+						</p>
+					</section>
+					<section data-state="leonardJ">
+					</section>
+					<section data-state="howardTt">
+					</section>
+					<section data-state="rajSj">
+					</section>
+					<section data-state="costume1">
+					</section>
+				</section>
+				<section class="set_decration">
+					<section data-state="setdec">
+						<h2>set</h2>
+					</section>
+					<section data-state="comic">
+						<p>comic book store</p>
+						<p class="fragment conclusion">live store</p>
+					</section>
+					<section data-state="lab">
+						<p>labs</p>
+						<p class="fragment conclusion">details to arouse resonance</p>
+					</section>
+					<section data-state="apartment">
+						<p class="vague">apartment</p>
+						<p class="fragment conclusion vague">details to makde it a real scientists' home</p>
+					</section>
+				</section>
+				<section class="romance">
+					<section data-state="emotionRm">
+						<h2>romance</h2>
+					</section>
+				</section>
+				<section class="friendship">
+					<section data-state="friend">
+						<h2>friendship</h2>
+					</section>
+					<section data-state="scene2">
+					</section>
+					<section data-state="scene3">
+					</section>
+				</section>
+				<section>
+					<h2>For Audience</h2>
+					<ol class="forAudience">
+						<li class="fragment">joy, visual impact (costume, set decoration), emotion (friendship, romance)</li>
+						<li class="fragment">The show, ultimately, is a weaker(弱者) story. Whether you’re watching the show and saying, like,”That’s me!”or you’re watching it going, “What’s up with these guys?”everyone can relate to being a weaker at some point. People like to help or support weakers, because everyone, in their lives, has felt like a weaker.</li>
+					</ol>
+				</section>
+
+				<section class="acknowledge">
+					<h1>Thank you!</h1>
+					<p class="authorize">
+						<small><a href="https://github.com/hakimel/reveal.js#configuration">@reveal.js</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p>
+				</section>
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+	</body>
+</html>
