@@ -4,8 +4,8 @@
 A. charactersB. writing/scriptC. costume
 D. setE. emotion(friendship romance family)
 	Ⅲ. characters: they’re smart in work but idoits in daily life
-Ⅳ. Writing
-A. an experienced writerB. technical directorC. live audience(seldom in other shows, help improve the writing and  give actors passion)
+Ⅳ. Writing
+A. an experienced writerB. technical directorC. live audience(seldom in other shows, help improve the writing and  give actors passion)
 	Ⅴ. costume(outstand in the crowd, very unharmonious)
 A. Sheldon: plaid-pant,T-shirtB. Leonard: bleached jacket, dark-rimmed glasses, converse shoesC. Howard: over-tight pant with bright color, over-sized beltD. Raj: unharmonious match of zip sweater jacket and patterned sweater
 	Ⅵ. set(incredibly detailed)
